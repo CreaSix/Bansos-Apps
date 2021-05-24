@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">BansosApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="header_selamat_datang">SELAMAT DATANG</string>
+    <string name="tv_nama_pengguna">OCTAVIAN</string>
+    <string name="dummy_date">Senin, 20 Jun 2021</string>
+    <string name="dummy_note">Semoga Usahamu Berhasil..</string>
+    <string name="content_header">Logo Header</string>
+    <string name="title_list_bansos">Bansos Tersedia</string>
+    <string name="title_card_bansos">Bantuan Uang Tunai</string>
+    <string name="desc_card_bansos">Bantuan Dari Pemerintah Berupa Uang tunai senilai Rp.1000.000</string>
+    <string name="content_list_bansos">Image Bansos</string>
 </resources>

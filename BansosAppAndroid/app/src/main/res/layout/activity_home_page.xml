@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.HomePage">
+
+    <!--    HEADER SECTION-->
+    <TextView
+        android:id="@+id/tv_header_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/header_selamat_datang"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_header_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/tv_header_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/tv_nama_pengguna"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_date_header"
+        app:layout_constraintStart_toStartOf="@+id/tv_header_welcome"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header_welcome" />
+
+    <TextView
+        android:id="@+id/tv_date_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/dummy_date"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_note_header"
+        app:layout_constraintStart_toStartOf="@+id/tv_header_username"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header_username" />
+
+    <TextView
+        android:id="@+id/tv_note_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/dummy_note"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/tv_header_username"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_header" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/shakehand"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        android:contentDescription="@string/content_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    END HEADER SECTION-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/homepage_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_note_header">
+
+        <TextView
+            android:id="@+id/tv_title_list_bansos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/title_list_bansos"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_bansos"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            tools:listitem="@layout/item_list_bansos"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_list_bansos"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_list_bansos" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

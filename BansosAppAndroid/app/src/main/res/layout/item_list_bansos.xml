@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:contentDescription="@string/content_list_bansos"
+        android:id="@+id/card_list_bansos_image"
+        android:background="@drawable/homepage_background"
+        android:scaleType="centerCrop"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/bansos_pict"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/card_list_bansos_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_card_bansos"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="19sp"/>
+        <TextView
+            android:id="@+id/card_list_bansos_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/desc_card_bansos"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
